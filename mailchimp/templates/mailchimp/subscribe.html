@@ -1,0 +1,6 @@
+{% load i18n %}
+{% load url from future %}
+<form action="{% url 'mailchimp:subscribe' %}" method="post">{% csrf_token %}
+{{ form.as_p }}
+<button type="submit">{%trans "Submit" %}</button>
+</form>
