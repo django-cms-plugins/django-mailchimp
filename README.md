@@ -23,7 +23,7 @@ It defines a single template tag `mailchimp_subscribe_form` that you can call wi
 How to integrate it with django-cms
 ------------------------------------
 
-Create a cms_plugins.py file, and add the following to it:
+Create a `cms_plugins.py` file, and add the following to it:
 
 ```
 from mailchimp.forms import SubscribeForm
@@ -47,3 +47,20 @@ Add to your `urls.py`:
 ```
 url(r'^maillist/', include('mailchimp.urls', namespace='mailchimp')),
 ```
+
+Add to your `models.py`
+
+```
+from cms.models import CMSPlugin
+
+class SignupFormPlugin(CMSPlugin):
+	list_id = models.CharField(max_length=30)
+
+	def __unicode__(self):
+		return self.list_id
+```
+
+Websites using this app
+------------------------
+
+* [Jalagati Jóga Egyesület](http://jalagat.hu)
