@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-13 13:30+0200\n"
+"POT-Creation-Date: 2013-05-12 15:32+0200\n"
 "PO-Revision-Date: 2012-09-13 13:45+0100\n"
 "Last-Translator: Nagy Viktor <viktor.nagy@toolpart.hu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: templates/mailchimp/subscribe.html:5
-msgid "Submit"
-msgstr "Mehet"
+#: forms.py:12
+msgid "Name"
+msgstr "Neved"
 
+#: forms.py:13
+msgid "E-mail"
+msgstr "E-mail címed"
+
+#: templates/mailchimp/subscribe.html:5
+msgid "Subscribe"
+msgstr "Feliratkozom"
+
+#~ msgid "Submit"
+#~ msgstr "Mehet"
