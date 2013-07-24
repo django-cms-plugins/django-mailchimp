@@ -11,7 +11,6 @@ def read_file(filename):
     except IOError:
         return ''
 
-
 setup(
     name='django-cms-mailchimp',
     version=__import__('cmsplugin_mailchimp').__version__,
@@ -36,5 +35,5 @@ setup(
     long_description=read_file('README.rst'),
     test_suite="runtests.runtests",
     zip_safe=False,
-    requires=['django(>=1.4)', 'mailsnake']
+    requires=['django(>=1.4)', 'mailsnake', 'classytags']
 )
